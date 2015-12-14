@@ -4,23 +4,45 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "teamname",
+            "title":"Team Name"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "name",
+            "title":"Name"
+        },
+        {
+            "id": "description",
+            "title":"Description"
+        },
+        {
+            "id": "links_html",
+            "title":"URL"
+        },
+        {
+            "id": "owner_teamname",
+            "title":"Owner Team Name"
+        },
+        {
+            "id": "owner_username",
+            "title":"Owner User Name"
+        },
+        {
+            "id": "owner_links_self",
+            "title":"Owner URL"
+        },
+        {
+            "id": "created_on",
+            "title":"Created On"
         }
-      */
     ],
+    "providers": [{
+        "name": "bitbucket"
+    }],
+    "icon": "bitbucket",
     "title": "Bitbucket Get Team Repos" /* Required.A display name for the module */
 }
